@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link href="css/detail.css" rel="stylesheet" />
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/tools.js"></script>
+        <script type="text/javascript">
+            $(function () {
+                showStar(6)
+            })
+            //n表示后台获取的星数
+            function showStar(n) {
+                var con_wid = document.getElementById("star_con").offsetWidth;
+                var del_star = document.getElementById("del_star");
+                console.log(con_wid);
+
+                //透明星星移动的像素
+                var del_move = (n * con_wid) / 10;
+
+                del_star.style.backgroundPosition = -del_move + "px 0px";
+                del_star.style.left = del_move + "px";
+            }
+        </script>
+
+	</head>
+	<body >
+		<div class="wrap">
+			<div class="header">
+				<div class="left_icon" onclick="window.history.go(-1);">
+					<img src="img/left.png"/>
+				</div>
+				<p>芳华</p>				
+			</div>
+			
+					<div class="m_detail">
+						<div class="movie_box">
+							<div class="m_pic">
+								<img src="img/movie.jpg"/>
+								<div class="m_play">
+									
+								</div>
+							</div>
+							<div class="m_content">
+								<div class="m_name">
+									芳华									
+								</div>
+								<div class="m_sore">
+									<div id="star_con" class="star-vote">
+							            <span id="add_star" class="add-star"></span>
+							            <span id="del_star" class="del-star"></span>
+							        </div>
+							        <div class="m_score">
+							        	9.1分
+							        </div>
+								</div>
+								<div class="m_type">
+									剧情,爱情,战争
+								</div>
+								<div class="m_cast">
+									主演,黄轩,苗苗,111
+								</div>
+								<div class="m_time">
+									上映时间：2017-12-15
+								</div>
+							</div>
+							
+						</div>
+						<div class="detail_txt">
+				本片讲述了上世纪七十到八十年代充满理想和激情的军队文工团，一群正值芳华的青春少年，经历着成长中的爱情萌发与充斥变数的人生命运。乐于助人、质朴善良的刘峰（黄轩 饰），和从农村来，屡遭文工团女兵歧视与排斥的何小萍（苗苗 饰），“意外”离开了浪漫安逸的文工团，卷入了残酷的战争，在战场上继续绽放着血染的芳华。他们感受着集体生活的痛与暖、故人的分别与重逢，还有时代变革之下，每个人的渺小脆弱和无力招架。而昔日的文工团战友萧穗子（钟楚曦 饰）、林丁丁（杨采钰 饰）、郝淑雯（李晓峰 饰）、陈灿（王天辰 饰）等人，在大时代的背景之下，每个人的命运大相径庭，拥有着出人意料的人生归宿……从来不需要想起，永远也不会忘记。
+			</div>
+			</div>
+            
+			<div class="detail_footer">
+				<a href="#">立即购票</a>
+			</div>
+		</div>
+	</body>
+</html>

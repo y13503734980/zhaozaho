@@ -1,0 +1,190 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link href="css/movie.css" rel="stylesheet" />
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/tools.js"></script>
+        <script type="text/javascript">
+
+        </script>
+	</head >
+    <body >
+        <div class="wrap">
+            <div class="header">
+                <div class="left_icon" onclick="window.history.go(-1);">
+                    <img src="img/left.png" />
+                </div>
+                <p>小莱电影</p>
+            </div>
+            <div id="m_header">影片</div>
+            <div id="wrapper">
+                <div id="scroller">
+                    <div class="movie">
+                        <div class="movie_box">
+                            <div class="m_pic">
+                                <img src="img/movie.jpg" />
+                            </div>
+                            <div class="m_content">
+                                <div class="m_name">
+                                    <h3>芳华</h3>
+                                    <h4><span>2D</span>IMAX</h4>
+                                </div>
+                                <div class="m_type">
+                                    剧情,爱情,战争
+					            </div>
+                                <div class="m_cast">
+                                    主演,黄轩,苗苗,111
+					            </div>
+                            </div>
+                            <div class="m_btn">
+                                <p>9.1分</p>
+                                <input type="button" id="" value="购票" />
+                            </div>
+                        </div>
+                        <div class="movie_box">
+                            <div class="m_pic">
+                                <img src="img/movie.jpg" />
+                            </div>
+                            <div class="m_content">
+                                <div class="m_name">
+                                    <h3>芳华</h3>
+                                    <h4><span>2D</span>IMAX</h4>
+                                </div>
+                                <div class="m_type">
+                                    剧情,爱情,战争
+					            </div>
+                                <div class="m_cast">
+                                    主演,黄轩,苗苗,111
+					            </div>
+                            </div>
+                            <div class="m_btn">
+                                <p>9.1分</p>
+                                <input type="button" id="" value="购票" />
+                            </div>
+                        </div>
+                        <div class="movie_box">
+                            <div class="m_pic">
+                                <img src="img/movie.jpg" />
+                            </div>
+                            <div class="m_content">
+                                <div class="m_name">
+                                    <h3>芳华</h3>
+                                    <h4><span>2D</span>IMAX</h4>
+                                </div>
+                                <div class="m_type">
+                                    剧情,爱情,战争
+					            </div>
+                                <div class="m_cast">
+                                    主演,黄轩,苗苗,111
+					            </div>
+                            </div>
+                            <div class="m_btn">
+                                <p>9.1分</p>
+                                <input type="button" id="" value="购票" />
+                            </div>
+                        </div>
+                        <div class="movie_box">
+                            <div class="m_pic">
+                                <img src="img/movie.jpg" />
+                            </div>
+                            <div class="m_content">
+                                <div class="m_name">
+                                    <h3>芳华</h3>
+                                    <h4><span>2D</span>IMAX</h4>
+                                </div>
+                                <div class="m_type">
+                                    剧情,爱情,战争
+					            </div>
+                                <div class="m_cast">
+                                    主演,黄轩,苗苗,111
+					            </div>
+                            </div>
+                            <div class="m_btn">
+                                <p>9.1分</p>
+                                <input type="button" id="" value="购票" />
+                            </div>
+                        </div>
+                        <div class="movie_box">
+                            <div class="m_pic">
+                                <img src="img/movie.jpg" />
+                            </div>
+                            <div class="m_content">
+                                <div class="m_name">
+                                    <h3>芳华</h3>
+                                    <h4><span>2D</span>IMAX</h4>
+                                </div>
+                                <div class="m_type">
+                                    剧情,爱情,战争
+					            </div>
+                                <div class="m_cast">
+                                    主演,黄轩,苗苗,111
+					            </div>
+                            </div>
+                            <div class="m_btn">
+                                <p>9.1分</p>
+                                <input type="button" id="" value="购票" />
+                            </div>
+                        </div>
+                        <div class="movie_box">
+                            <div class="m_pic">
+                                <img src="img/movie.jpg" />
+                            </div>
+                            <div class="m_content">
+                                <div class="m_name">
+                                    <h3>芳华</h3>
+                                    <h4><span>2D</span>IMAX</h4>
+                                </div>
+                                <div class="m_type">
+                                    剧情,爱情,战争
+					            </div>
+                                <div class="m_cast">
+                                    主演,黄轩,苗苗,111
+					            </div>
+                            </div>
+                            <div class="m_btn">
+                                <p>9.1分</p>
+                                <input type="button" id="" value="购票" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="m_footer">
+                <ul>
+                    <li><a href="#" class="cur"><img src="img/movie_icon.png" /><p>电影</p></a></li>
+                    <li><a href="#"><img src="img/order.png" /><p>订单</p></a></li>
+                    <li><a href="#"><img src="img/uder.png" /><p>我的</p></a></li>
+                </ul>
+            </div>
+        </div>
+    </body>
+</html >
+
+
+<script>
+
+    var settings = {
+        url: weburl + "api/Movie/New",
+        method: "get",
+        success: function (data) {
+            //console.log(data);
+            var movie = "";
+            for (var i = 0; i < data.length; i++) {
+                dd = data[i];
+                movie += ' <div class="movie_box"> <div class="m_pic"> <img src="' + weburl+dd.ImgUrl + '" /> </div> <div class="m_content"> <div class="m_name"> <h3>芳华</h3> <h4><span>2D</span>IMAX</h4> </div> <div class="m_type"> 剧情,爱情,战争 </div> <div class="m_cast"> 主演,黄轩,苗苗,111 </div> </div> <div class="m_btn"> <p>9.1分</p> <input type="button" id="" value="购票" /> </div> </div>';
+            }
+
+            $(".movie").empty();
+         
+            $(movie).appendTo(".movie");
+
+        }
+
+    }
+
+    $.ajax(settings);
+</script>
